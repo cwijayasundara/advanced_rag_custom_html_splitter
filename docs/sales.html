@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML with Nested Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Company Quarterly Report</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>This document provides an overview of the company's performance in the last quarter. It includes detailed tables and nested tables for specific departments and projects.</p>
+        </section>
+
+        <section>
+            <h2>Financial Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Revenue</th>
+                        <th>Expenses</th>
+                        <th>Net Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sales</td>
+                        <td>$1,200,000</td>
+                        <td>$800,000</td>
+                        <td>$400,000</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>$500,000</td>
+                        <td>$300,000</td>
+                        <td>$200,000</td>
+                    </tr>
+                    <tr>
+                        <td>R&D</td>
+                        <td>$300,000</td>
+                        <td>$400,000</td>
+                        <td>-$100,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Project Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project Alpha</td>
+                        <td>Completed</td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Description</th>
+                                        <th>Completion Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Research</td>
+                                        <td>Generative AI refers to a category of artificial intelligence algorithms that generate new content, whether it be images, text, or audio, that is similar to the data it was trained on. These algorithms, particularly those based on deep learning models such as Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), have shown remarkable capabilities in creating realistic data. For example, GANs consist of two neural networks: a generator that creates new data instances, and a discriminator that evaluates them. This dynamic creates a feedback loop where the generator improves over time. Applications of generative AI are vast, spanning from creating art and music to drug discovery and enhancing medical imaging. The research phase involved a thorough exploration of current generative AI technologies, understanding their underlying mechanisms, potential applications, and ethical considerations. Extensive literature reviews, experiments with existing models, and consultations with experts were conducted to gather comprehensive insights.</td>
+                                        <td>2023-04-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Development</td>
+                                        <td>Developed the product prototype based on research findings and initial customer feedback.</td>
+                                        <td>2023-06-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Testing</td>
+                                        <td>Conducted thorough testing to ensure the product meets quality standards and customer expectations.</td>
+                                        <td>2023-08-10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Project Beta</td>
+                        <td>Ongoing</td>
+                        <td>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Description</th>
+                                        <th>Estimated Completion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Planning</td>
+                                        <td>Detailed planning and resource allocation for the project.</td>
+                                        <td>2024-01-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Execution</td>
+                                        <td>Initial phase of project execution including milestone settings and team meetings.</td>
+                                        <td>2024-04-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monitoring</td>
+                                        <td>Regular monitoring and updates to ensure the project stays on track.</td>
+                                        <td>2024-07-01</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
