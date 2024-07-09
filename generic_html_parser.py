@@ -4,8 +4,8 @@ from langchain_core.documents import Document
 """ write a function to extract table rows from an html file"""
 
 
-def extract_table_rows(filename):
-    html_elements = partition_html(filename=filename)
+def extract_table_rows(filename_content):
+    html_elements = partition_html(text=filename_content)
 
     tables = [el for el in html_elements if el.category == "Table"]
 
@@ -25,8 +25,8 @@ def extract_table_rows(filename):
 """ write a function to extract other elements than tables from an html file"""
 
 
-def extract_other_elements(filename):
-    html_elements = partition_html(filename=filename)
+def extract_other_elements(filename_content):
+    html_elements = partition_html(text=filename_content)
 
     other_elements = [el for el in html_elements if el.category != "Table"]
 

@@ -1,6 +1,6 @@
 import warnings
 from langchain_core.documents import Document
-from token_calculator import num_tokens_from_string
+from token_calculator import num_tokens_from_string, load_file
 from langchain_community.vectorstores import Chroma
 from generic_html_parser import extract_table_rows, extract_other_elements
 from research.summerizer import summarise_text
@@ -15,9 +15,14 @@ max_token_size = 2000
 filename = "./docs/sales.html"
 # filename = "./docs/nvidia_financial_results_q1_fiscal_2025.html"
 
+# load the html file
+html_content = load_file(filename)
+
+# print(html_content)
+
 """ extract the table rows and other elements from the html file"""
 
-table_rows = extract_table_rows(filename)
+table_rows = extract_table_rows(html_content)
 
 table_rows_to_embed = []
 
@@ -31,7 +36,7 @@ for row in table_rows:
     else:
         table_rows_to_embed.append(row)
 
-other_elements = extract_other_elements(filename)
+other_elements = extract_other_elements(html_content)
 
 # loop and print the other elements sizes
 for element in other_elements:
